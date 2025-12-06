@@ -7,6 +7,5 @@ import com.Ram.uber.model.User;
 
 @Repository
 public interface UserRepository extends MongoRepository<User, String> {
-
-    Object findByUsername(String username);
+    User findByUsername(String username);
 }
